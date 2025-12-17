@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PDF to Word Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  font-family: Inter, system-ui, sans-serif;
+  background:#0a0a0a;
+  color:#fff;
+}
+.container{
+  max-width:900px;
+  margin:80px auto;
+  padding:30px;
+}
+h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+p{
+  color:#aaa;
+  margin-bottom:30px;
+}
+.upload-box{
+  border:2px dashed #333;
+  padding:40px;
+  text-align:center;
+  border-radius:16px;
+}
+input[type=file]{
+  margin-top:20px;
+}
+button{
+  margin-top:30px;
+  padding:14px 30px;
+  border:none;
+  background:#fff;
+  color:#000;
+  border-radius:999px;
+  font-weight:600;
+  cursor:pointer;
+}
+button:hover{
+  opacity:.85;
+}
+.back{
+  margin-top:40px;
+  display:inline-block;
+  color:#777;
+  text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>PDF to Word</h1>
+  <p>Convert PDF files into editable Word documents easily.</p>
+
+  <div class="upload-box">
+    <strong>Upload your PDF file</strong><br>
+    <input type="file" accept=".pdf">
+  </div>
+
+  <button>Convert to Word</button>
+
+  <br>
+  <a class="back" href="index.html">← Back to all tools</a>
+</div>
+
+</body>
+</html>
