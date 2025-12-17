@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>🔥 100 Tools Website 🔥</title>
+<title>💎🔥 100 Tools Website 🔥💎</title>
 <style>
+  /* Body & Background */
   body {
     margin:0; padding:0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+    font-family: 'Arial Black', Gadget, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
     color: #333;
   }
+
+  /* Header */
   header {
     text-align: center;
     padding: 60px 20px;
@@ -17,19 +20,25 @@
     backdrop-filter: blur(10px);
   }
   header h1 {
-    font-size: 48px;
-    color: #ff4500;
-    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 60px;
+    background: linear-gradient(45deg, #ff0066, #ffcc00, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     animation: bounce 1s infinite alternate;
   }
   header p {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 22px;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   }
   @keyframes bounce {
     from { transform: translateY(0px);}
     to { transform: translateY(-15px);}
   }
+
+  /* Search Bar */
   .search-container {
     text-align: center;
     margin: 30px 0;
@@ -43,6 +52,8 @@
     outline: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
+
+  /* Tools Card Grid */
   .tools {
     display: flex;
     flex-wrap: wrap;
@@ -51,39 +62,41 @@
     padding: 20px;
   }
   .tool-card {
-    background: #fff;
-    border-radius: 15px;
+    background: linear-gradient(145deg, #ffeb3b, #ff9800);
+    border-radius: 20px;
     width: 220px;
-    padding: 20px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 25px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s, box-shadow 0.4s;
     text-align: center;
   }
   .tool-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    transform: rotateY(15deg) rotateX(5deg) translateY(-15px);
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.5);
   }
   .tool-card a {
     text-decoration: none;
     color: #fff;
-    background: #ff4500;
-    padding: 12px 25px;
-    border-radius: 10px;
+    background: linear-gradient(45deg, #ff0066, #ffcc00);
+    padding: 14px 28px;
+    border-radius: 15px;
     display: inline-block;
     font-weight: bold;
-    margin-top: 10px;
-    transition: background 0.3s;
+    margin-top: 15px;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, background 0.3s;
   }
   .tool-card a:hover {
-    background: #e03e00;
+    background: linear-gradient(45deg, #00ccff, #ff0066);
+    transform: scale(1.1) rotate(-3deg);
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🔥 100 Tools Website 🔥</h1>
-  <p>All your favorite tools in one place — super easy & fast!</p>
+  <h1>🚀💎 100 Tools Website 💎🚀</h1>
+  <p>All your favorite tools in one place — super fast & insanely powerful! ⚡🔥</p>
 </header>
 
 <div class="search-container">
@@ -95,7 +108,7 @@
     <h3>📝 Word Counter</h3>
     <a href="tools/word-counter.html">Use Tool</a>
   </div>
-  <!-- nanti kita tambah lagi tool-card di sini -->
+  <!-- Nanti kita copy-paste tool-card sampai 100 -->
 </div>
 
 <script>
