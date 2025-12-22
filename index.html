@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Ultimate 100 Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666;
+  --card: #f7f7f7;
+  --border: #e5e5e5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* HEADER */
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* SEARCH */
+.search-box {
+  max-width: 420px;
+  margin: 0 auto 50px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  outline: none;
+}
+
+/* CATEGORY */
+.category {
+  margin-bottom: 60px;
+}
+
+.category h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* TOOLS GRID */
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.tool {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.tool:hover {
+  transform: translateY(-3px);
+}
+
+.tool span {
+  display: block;
+  font-size: 15px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 80px;
+  color: var(--muted);
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>🚀 Ultimate 100 Tools</h1>
+<p class="subtitle">Simple. Fast. Useful tools for everyday work.</p>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="Search tools..." />
+</div>
+
+<!-- PDF TOOLS -->
+<div class="category">
+<h2>📄 PDF Tools</h2>
+<div class="tools">
+  <div class="tool">PDF to Word</div>
+  <div class="tool">Word to PDF</div>
+  <div class="tool">PDF to JPG</div>
+  <div class="tool">JPG to PDF</div>
+  <div class="tool">Compress PDF</div>
+  <div class="tool">Merge PDF</div>
+  <div class="tool">Split PDF</div>
+  <div class="tool">Unlock PDF</div>
+  <div class="tool">Protect PDF</div>
+  <div class="tool">PDF Page Remover</div>
+</div>
+</div>
+
+<!-- IMAGE TOOLS -->
+<div class="category">
+<h2>🖼 Image Tools</h2>
+<div class="tools">
+  <div class="tool">Image Compressor</div>
+  <div class="tool">Image Resizer</div>
+  <div class="tool">Image Cropper</div>
+  <div class="tool">Background Remover</div>
+  <div class="tool">Image to Base64</div>
+  <div class="tool">Image to Text</div>
+  <div class="tool">Blur Image</div>
+  <div class="tool">Pixelate Image</div>
+  <div class="tool">Meme Generator</div>
+  <div class="tool">Profile Picture Maker</div>
+</div>
+</div>
+
+<!-- TEXT TOOLS -->
+<div class="category">
+<h2>✍️ Text Tools</h2>
+<div class="tools">
+  <div class="tool">Paraphraser</div>
+  <div class="tool">Grammar Checker</div>
+  <div class="tool">Text Summarizer</div>
+  <div class="tool">Word Counter</div>
+  <div class="tool">Character Counter</div>
+  <div class="tool">Case Converter</div>
+  <div class="tool">Remove Duplicate Lines</div>
+  <div class="tool">Remove Extra Spaces</div>
+  <div class="tool">Text Encrypt & Decrypt</div>
+  <div class="tool">Lorem Ipsum Generator</div>
+</div>
+</div>
+
+<!-- WEB & SEO -->
+<div class="category">
+<h2>🌐 Web & SEO Tools</h2>
+<div class="tools">
+  <div class="tool">Meta Tag Generator</div>
+  <div class="tool">Hash Generator</div>
+  <div class="tool">URL Encoder / Decoder</div>
+  <div class="tool">UTM Builder</div>
+  <div class="tool">HTTP Header Checker</div>
+  <div class="tool">Website Status Checker</div>
+  <div class="tool">Open Graph Preview</div>
+  <div class="tool">DNS Lookup</div>
+  <div class="tool">Color Palette Generator</div>
+  <div class="tool">Favicon Generator</div>
+</div>
+</div>
+
+<!-- FUN TOOLS -->
+<div class="category">
+<h2>🎲 Fun & Utility Tools</h2>
+<div class="tools">
+  <div class="tool">Username Generator</div>
+  <div class="tool">Password Generator</div>
+  <div class="tool">Random Number Generator</div>
+  <div class="tool">Random Name Picker</div>
+  <div class="tool">Dice Roller</div>
+  <div class="tool">Coin Flip</div>
+  <div class="tool">Countdown Timer</div>
+  <div class="tool">Stopwatch</div>
+  <div class="tool">Age Calculator</div>
+  <div class="tool">QR Code Generator</div>
+</div>
+</div>
+
+<footer>
+© 2025 Ultimate 100 Tools
+</footer>
+
+</div>
+
+<script>
+const search = document.getElementById("search");
+const tools = document.querySelectorAll(".tool");
+
+search.addEventListener("keyup", () => {
+  const value = search.value.toLowerCase();
+  tools.forEach(tool => {
+    tool.style.display = tool.textContent.toLowerCase().includes(value)
+      ? "block"
+      : "none";
+  });
+});
+</script>
+
+</body>
+</html>
