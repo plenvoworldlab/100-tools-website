@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultimate 100 Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#ffffff;
+  --text:#111;
+  --muted:#666;
+  --card:#f6f6f6;
+  --border:#e4e4e4;
+}
+
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system;}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+  text-align:center;
+}
+
+h1{
+  font-size:44px;
+  margin-bottom:12px;
+}
+
+.subtitle{
+  font-size:17px;
+  color:var(--muted);
+  max-width:700px;
+  margin:0 auto 45px;
+}
+
+/* SEARCH */
+.search{
+  max-width:420px;
+  margin:0 auto 60px;
+}
+.search input{
+  width:100%;
+  padding:14px 18px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  font-size:16px;
+}
+
+/* CATEGORY */
+.category{
+  margin-bottom:70px;
+}
+.category h2{
+  font-size:26px;
+  margin-bottom:25px;
+}
+
+/* TOOLS */
+.tools{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+
+.tool{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:22px;
+  text-align:center;
+  transition:.2s ease;
+}
+.tool:hover{transform:translateY(-4px);}
+
+.tool h3{
+  margin:0;
+  font-size:18px;
+}
+.tool p{
+  font-size:14px;
+  color:var(--muted);
+  margin:10px 0 16px;
+  line-height:1.5;
+}
+
+.open{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  font-size:13px;
+  text-decoration:none;
+  color:#000;
+}
+
+/* FOOTER */
+footer{
+  margin-top:90px;
+  font-size:14px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>🧰 Ultimate 100 Tools</h1>
+<p class="subtitle">
+All-in-one collection of smart, fast & simple online tools.
+Built to save time, boost productivity, and solve real daily problems — without noise.
+</p>
+
+<div class="search">
+  <input id="search" placeholder="Search tools...">
+</div>
+
+<!-- PDF -->
+<div class="category">
+<h2>📄 PDF Tools</h2>
+<div class="tools">
+
+<div class="tool">
+<h3>PDF to Word</h3>
+<p>Convert PDF files into fully editable Word documents instantly.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Word to PDF</h3>
+<p>Turn Word documents into clean, professional PDF files.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Compress PDF</h3>
+<p>Reduce PDF file size without destroying quality.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Merge PDF</h3>
+<p>Combine multiple PDFs into a single organised file.</p>
+<a class="open">Open Tool</a>
+</div>
+
+</div>
+</div>
+
+<!-- IMAGE -->
+<div class="category">
+<h2>🖼 Image Tools</h2>
+<div class="tools">
+
+<div class="tool">
+<h3>Image Compressor</h3>
+<p>Shrink image size while keeping it sharp and clear.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Background Remover</h3>
+<p>Remove image background automatically in seconds.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Image Resizer</h3>
+<p>Resize images to exact dimensions for any platform.</p>
+<a class="open">Open Tool</a>
+</div>
+
+</div>
+</div>
+
+<!-- TEXT -->
+<div class="category">
+<h2>✍️ Text Tools</h2>
+<div class="tools">
+
+<div class="tool">
+<h3>Word Counter</h3>
+<p>Count words accurately for essays, articles & posts.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Character Counter</h3>
+<p>Instantly count characters for limits & forms.</p>
+<a class="open">Open Tool</a>
+</div>
+
+<div class="tool">
+<h3>Text Cleaner</h3>
+<p>Remove extra spaces, lines & messy formatting.</p>
+<a class="open">Open Tool</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2025 Ultimate 100 Tools — Clean. Fast. Useful.
+</footer>
+
+</div>
+
+<script>
+const search=document.getElementById("search");
+const tools=document.querySelectorAll(".tool");
+
+search.addEventListener("keyup",()=>{
+  const v=search.value.toLowerCase();
+  tools.forEach(t=>{
+    t.style.display=t.innerText.toLowerCase().includes(v)?"block":"none";
+  });
+});
+</script>
+
+</body>
+</html>
